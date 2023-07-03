@@ -9,7 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@acme/core": "workspace:0.0.0",
+    "@acme/core": "workspace:*",
+    "tailwindconfig": "workspace:*",
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
@@ -24,7 +25,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "@acme/tsconfig": "workspace:0.0.0",
-    "eslint-config-acme": "workspace:0.0.0"
+    "@acme/tsconfig": "workspace:*",
+    "eslint-config-acme": "workspace:*"
   }
 }
