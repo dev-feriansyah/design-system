@@ -1,7 +1,9 @@
-/** @type {import('tailwindcss').Config} */
-const sharedConfig = require("tailwindconfig");
-module.exports = {
+import { type Config } from "tailwindcss";
+import sharedConfig from "tailwindconfig/index"
+
+export default {
   ...sharedConfig,
+  darkMode: ["class"],
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -9,4 +11,4 @@ module.exports = {
     "../../packages/acme-core/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   plugins: [],
-}
+} satisfies Config;
